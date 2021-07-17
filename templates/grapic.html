@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Album example · Bootstrap v5.0</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#7952b3">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        .contener{
+            margin: 50px;
+        }
+        .col{
+            box-shadow: 0 3px 10px grey;
+        }
+        .fw-light{
+            animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+            animation-duration: 2s;
+            animation-delay: 1s; 
+            animation-iteration-count: infinite;
+        }
+        #card1,#card4,#card7,#card10{
+            animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+            animation-duration: 4s;
+            animation-delay: 1s; 
+            animation-iteration-count: 2;
+        }
+        #card3,#card6,#card9,#card12{
+            animation: backInRight; /* referring directly to the animation's @keyframe declaration */
+            animation-duration: 4s;
+            animation-delay: 1s; 
+            animation-iteration-count: 2;
+        }
+        #card2,#card5,#card8,#card11{
+            animation: zoomIn; /* referring directly to the animation's @keyframe declaration */
+            animation-duration: 4s;
+            animation-delay: 1s; 
+            animation-iteration-count: 2;
+        }
+
+        
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">About</h4>
+                        <p class="text-muted">Hey,I am Priti Paul.I am a Graphic Designer.I have great Kownledge about
+                            graphic design likes- logo, Poster, Photoshop, animation etc. </p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-white">Contact</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Follow on linkedin</a></li>
+                            <li><a href="#" class="text-white">Like on Facebook</a></li>
+                            <li><a href="#" class="text-white">Email me</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2"
+                        viewBox="0 0 24 24">
+                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                        <circle cx="12" cy="13" r="4" />
+                    </svg>
+                    <strong>Developer</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light" >My Graphic Works</h1>
+                    <p class="lead text-muted">Hey,I am Priti Paul.I am a Graphic Designer.I have great Kownledge about
+                        graphic design likes- logo, Poster, Photoshop, animation etc. </p>
+                    <p>
+                        <a href="/" class="btn btn-primary my-2">Back to Home Page</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <div class="contener">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col" id="card1">
+                    <div class="card h-100">
+                        <img src="{{url_for('static', filename = 'img/logo1.jpg') }}" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col" id="card2">
+                    <div class="card h-100">
+                        <img src="{{url_for('static', filename = 'img/logo3.jpg') }}" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col" id="card3">
+                    <div class="card h-100">
+                        <img src="{{url_for('static', filename = 'img/logo5.jpg') }}" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col" id="card4">
+                    <div class="card h-100">
+                        <img src="{{url_for('static', filename = 'img/logo4.jpg') }}" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col" id="card5">
+                    <div class="card h-100">
+                        <img src="{{url_for('static', filename = 'img/logo9.png') }}" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col" id="card6">
+                    <div class="card h-100">
+                        <img src="{{url_for('static', filename = 'img/logo7.jpg') }}" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col" id="card7">
+                    <div class="card h-100">
+                        <img src="{{url_for('static', filename = 'img/logo12.jpg') }}" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col" id="card8">
+                    <div class="card h-100">
+                        <img src="{{url_for('static', filename = 'img/logo6.jpg') }}" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col" id="card9">
+                    <div class="card h-100">
+                        <img src="{{url_for('static', filename = 'img/logo10.jpg') }}" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col" id="card10">
+                    <div class="card h-100">
+                        <img src="{{url_for('static', filename = 'img/logo8.jpg') }}" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col" id="card11">
+                    <div class="card h-100">
+                        <img src="{{url_for('static', filename = 'img/logo11.jpg') }}" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col" id="card12">
+                    <div class="card h-100">
+                        <img src="{{url_for('static', filename = 'img/logo2.jpg') }}" class="card-img-top" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="text-muted py-5">
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="#">Back to top</a>
+            </p>
+            <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+            <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
+                    href="/docs/5.0/getting-started/introduction/">getting started guide</a>.</p>
+        </div>
+    </footer>
+
+
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

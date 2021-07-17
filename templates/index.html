@@ -1,0 +1,309 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+            <div class="middle text-center clearfix">
+                <div class="container">
+                    <h1 class="pro-name">Hi,
+                        <!-- <span style="color: #71b644;" > -->I am Priti Paul
+                        <!-- </span> -->
+                    </h1>
+                    <p class="tagline">This is my Portfolio Website Here i gave my details</p>
+                    <div class="skills">
+
+                    </div> <!-- skills -->
+                    <a href="#contact" target="_blank" class="btn btn-lg btn-hire wow animated zoomIn">Contact Me</a>
+                </div> <!-- container -->
+            </div> <!-- middle -->
+
+            <div class="bottom text-center">
+                <a href="#portfolio"><i class="fa fa-angle-down fa-3x pulse"></i></a>
+            </div>
+        </div> <!-- overlay-1 -->
+    </div> <!-- content-block -->
+
+    <div class="content-block text-center" id="portfolio">
+        <header class="block-heading cleafix">
+            <h1>My Latest Works</h1>
+            <!-- <p>Take a look at some of my recent products</p> -->
+        </header>
+        <div class="contenter">
+            <div class="isotope portfolio-items">
+                <div class="element-item grid">
+                    <a href="https://priti-list200.herokuapp.com/" class="link" target="blank">
+                        <div class="portfolio-item effect-zoe">
+                            <img class="img-responsive" alt="Portfolio"
+                                src="{{url_for('static', filename = 'img/flask.jpg') }}">
+                            <figcaption>
+                                <h4 class="hidden-xs">My Development webside <br><span>Please click on the card and see
+                                        my another website</h4>
+                                <p class="icon-links">
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                                </p>
+                            </figcaption>
+                        </div>
+                </div>
+                </a>
+                <div class="element-item grid">
+                    <a href="https://9836443213.000webhostapp.com/home.html" class="link" target="blank">
+                        <div class="portfolio-item effect-zoe">
+                            <img class="img-responsive" alt="Portfolio"
+                                src="{{url_for('static', filename = 'img/work7.jpg') }}">
+                            <figcaption>
+                                <h4 class="hidden-xs">My Development webside <br><span>Please click on the card and see
+                                        my another website</h4>
+                                <p class="icon-links">
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                                </p>
+
+                            </figcaption>
+                        </div>
+                    </a>
+                </div>
+                <div class="element-item grid">
+                    <a href="/graphic" class="link" target="blank">
+                        <div class="portfolio-item effect-zoe">
+                            <img class="img-responsive" alt="Portfolio"
+                                src="{{url_for('static', filename = 'img/grapic.jpg') }}">
+                            <figcaption>
+                                <h4 class="hidden-xs">My Grapic Desing <br><span>Please click on the card and see my
+                                        Grapic design</h4>
+                                <p class="icon-links">
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                                </p>
+                            </figcaption>
+                        </div>
+                    </a>
+                </div>
+                <div class="element-item grid">
+                    <div class="portfolio-item effect-zoe">
+                        <img class="img-responsive" alt="Portfolio"
+                            src="{{url_for('static', filename = 'img/work1.jpg') }}">
+                        <figcaption>
+                            <h2 class="hidden-xs">Programming Language(C and Python)</h2>
+                            <p class="icon-links">
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                            </p>
+                        </figcaption>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- isotope portfolio-items -->
+        <!-- <a href="#" class="btn btn-lg btn-view">
+            <i class="fa fa-eye"></i>
+            <span>View All</span>
+        </a> -->
+        <!-- </div>  content-block -->
+
+        <!-- <div class="content-block text-center" id="services">
+            <div class="overlay-2">
+                        <header class="block-heading cleafix">
+                            <h1>More About Me</h1>
+                            <p>Lorem Ipsum Text</p>
+                        </header>
+                        <div class="block-content">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                <div class="row ">
+                                    <div class="col-sm-4">
+                                        <h4 class="pro-stat">Completed Project</h4>
+                                        <h2 class="proj-name count1 count-timer" >020</h2>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <h4 class="pro-stat">Working Project</h4>
+                                        <h2 class="proj-name count2">9</h2>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <h4 class="pro-stat">Top Rated Project</h4>
+                                        <h2 class="proj-name count3">015</h2>
+                                    </div>
+                                </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    overlay-2
+        </div>   content-block -->
+        <br>
+        <div></div>
+        <div id="services" class="content-block">
+            <div id="numbers" class="parallax">
+                <div class="overlay">
+                    <!-- title-->
+                    <div class="container-fluid numbers-title">
+                        <div class="container">
+                            <div class="row block-heading">
+                                <h1>Some Cool Facts About Me</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <!-- number list -->
+                        <ul class="numbersList">
+                            <li class="col-md-2 col-sm-4 col-xs-6">
+                                <h4> Graphic Design (in %) </h4>
+                                <span id="number1" class="count1 count-timer">95</span>
+                            </li>
+                            <li class="col-md-2 col-sm-4 col-xs-6">
+                                <h4> Web Development(Html, <br> Css,Js,Bootstrap,<br>Reactjs) </h4>
+                                <span id="number2" class="count2">92</span>
+                            </li>
+                            <li class="col-md-2 col-sm-4 col-xs-6">
+                                <h4>php & Mysql(in %)</h4>
+                                <span id="number3" class="count3">84</span>
+                            </li>
+                            <li class="col-md-2 col-sm-4 col-xs-6">
+                                <h4> Flask (in %)</h4>
+                                <span id="number4" class="count4">56</span>
+                            </li>
+                            <li class="col-md-2 col-sm-4 col-xs-6">
+                                <h4>data science and machine learning(in %)</h4>
+                                <span id="number5" class="count5">74</span>
+                            </li>
+                            <li class="col-md-2 col-sm-4 col-xs-6">
+                                <h4>Programming Languages(c and Python) </h4>
+                                <span id="number6" class="count6">65</span>
+                            </li>
+                        </ul><!-- numbersList end -->
+                    </div><!-- container-fluid end -->
+                </div><!-- overlay end -->
+            </div>
+        </div>
+
+        <div class="content-block" id="testimonials">
+            <header class="block-heading cleafix text-center">
+                <h1>Hi, I am Priti Paul</h1>
+                <!-- <p>Lorem Ipsum Text</p> -->
+            </header>
+            <div class="block-content text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <div class="owl-carousel">
+                                <div class="owl-item">
+                                    <div class="testimonial">
+                                        <img alt="Client Photo" src="{{url_for('static', filename = 'img/pic2.jpg') }}"
+                                            height="200px" width="200px">
+                                        <p>Hey,I am Priti Paul.I am a Web Developer. I have Kownledge about frontend (Html,CSS,Javascript,Reactjs,Bootstrap,Wordpress) also Backend(php & mysql,Flask and littile bit idea about nodejs & mongodb)
+                                        </p>
+                                        <strong>Priti Paul</strong><br>
+                                        <span>Web Development</span>
+                                    </div>
+                                </div> <!-- owl-item -->
+                                <div class="owl-item">
+                                    <div class="testimonial">
+                                        <img alt="Client Photo" src="{{url_for('static', filename = 'img/pic3.jpg') }}"
+                                            height="200px" width="200px">
+                                        <p>Hey,I am Priti Paul.I am a Graphic Designer.I have great Kownledge about graphic design likes- logo, Poster, Photoshop, animation etc. 
+                                        </p>
+                                        <strong>Priti Paul</strong><br>
+                                        <span>Graphic Designer</span>
+                                    </div>
+                                </div> <!-- owl-item -->
+                                <div class="owl-item">
+                                    <div class="testimonial">
+                                        <img alt="Client Photo" src="{{url_for('static', filename = 'img/pic2.jpg') }}"
+                                            height="200px" width="200px">
+                                        <p>Hey,I am Priti Paul.I have Kownledge about data science and machine learning
+                                           (Python ,Numpy, Pandas, Matplotlib, Seaborn etc) and as well as mainly focussed on all this things.
+                                        </p>
+                                        <strong>Priti Paul</strong><br>
+                                        <span>Datascience & Machinelearning</span>
+                                    </div>
+                                </div> <!-- owl-item -->
+                                <div class="owl-item">
+                                    <div class="testimonial">
+                                        <img alt="Client Photo" src="{{ url_for('static', filename ='img/pic4.jpeg') }}"
+                                            height="200px" width="200px">
+                                        <p>Good communication skills are perhaps the most basic skills that we can possess as an employee, yet they remain one of the most sought-after by employers, and I have good communication skills in Hindi, English, and Bengali, etc. and My hobby is Drawing, Crafting and any types of art work.
+                                        </p>
+                                        <strong>Priti Paul</strong><br>
+                                        <span>Extracurricular Activities</span>
+                                    </div>
+                                </div> <!-- owl-item -->
+                            </div> <!-- owl-carousel -->
+                        </div> <!-- col-md-12 -->
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </div> <!-- block-content -->
+        </div> <!-- content-block -->
+
+        <div class="content-block" id="contact">
+            <div class="overlay-3">
+                <header class="block-heading cleafix text-center">
+                    <h1>Contact</h1>
+                    <!-- <p>Feel Free to Contact</p> -->
+                </header>
+                <div class="block-content text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 wow animated fadeInLeft">
+                                <form class="contact-form" action="/" method="POST">
+                                    <input type="text" name="name" placeholder="Name" required >
+                                    <input type="email" name="mail" placeholder="Email" required >
+                                    <textarea rows="5" name="coment" placeholder="Say Something..."
+                                        required ></textarea>
+                                    <input type="submit" value="Submit">
+                                </form>
+                            </div>
+                            <div class="col-md-6 wow animated fadeInRight">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="contact-info">
+                                            <div class="clearfix">
+                                                <div class="rotated-icon">
+                                                    <div class="sqaure-nebir"></div>
+                                                    <i class="fa fa-map-marker"></i>
+                                                </div>
+                                                <p><strong> Address:</strong> Rajarhat Newtown , North 24pgs
+                                                    ,Kolkata-700135, West Bengal.
+                                                </p>
+                                            </div>
+                                            <div class="clearfix">
+                                                <div class="rotated-icon">
+                                                    <div class="sqaure-nebir"></div>
+                                                    <i class="fa fa-mobile"></i>
+                                                </div>
+                                                <p><strong> Cell No:</strong> 9836443213</p>
+                                            </div>
+                                            <div class="clearfix">
+                                                <div class="rotated-icon">
+                                                    <div class="sqaure-nebir"></div>
+                                                    <i class="fa fa-envelope-o"></i>
+                                                </div>
+                                                <p>
+                                                    <strong> Email:</strong> pritipaul135@gmail.com
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <ul class="social-box">
+                                        <li><a class="facebook-icon"
+                                                href="https://www.facebook.com/priti.paul.14811692/" target="blank"><i
+                                                    class="fa fa-facebook"></i></a></li>
+                                        <li><a class="twitter-icon" href="https://github.com/" target="blank"><i class="fab fa-github"></i></a></li>
+                                        <li><a class="linkedin-icon"
+                                                href="https://www.linkedin.com/in/priti-paul-3aa930200/"
+                                                target="blank"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- block-content -->
+            </div> <!-- overlay-3 -->
+        </div> <!-- content-block -->
+    
+        {% endblock body %}
+       
